@@ -21,10 +21,10 @@ nav {
 }
 @media (min-width: 20cm) {
 	nav {
-		width: 15em;
 		position: fixed;
-			top: 0;
-			left: 0;
+		width: 15em;
+		left: 0;
+		top: 0;
 	}
 	header, article, footer {
 		margin-left: 19em;
@@ -32,6 +32,9 @@ nav {
 }
 header {
 	text-align: center;
+}
+header img {
+	max-width: 100%;
 }
 article {
 	padding-left: 5em;
