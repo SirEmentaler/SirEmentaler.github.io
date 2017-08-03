@@ -1,0 +1,68 @@
+body {
+	background-color: #1C2A14;
+	background-image: url("../img/background.png");
+	background-attachment: fixed;
+	color: rgba(255, 255, 255, 0.85);
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 80%;
+}
+nav, header, article, footer {
+	background-color: #1C2A14;
+	background-color: rgba(28, 42, 20, 0.95);
+	border-color: #3C7234;
+	border-style: solid;
+	border-width: thin;
+	margin: 0.5em;
+	padding: 1.5em;
+}
+header, article, footer {
+	margin-left: 18.5em;
+}
+header {
+	text-align: center;
+}
+nav {
+	width: 15em;
+	position: fixed;
+		top: 0;
+		left: 0;
+}
+nav ul {
+	padding-left: 1em;
+}
+table {
+	border: void;
+}
+h1 {
+	font-size: 1.5em;
+}
+h2 {
+	font-size: 1.25em;
+}
+h3 {
+	font-size: 1.1em;
+}
+p {
+	text-align: justify;
+	text-indent: 1em;
+}
+a:link {
+	color: rgba(172, 215, 166, 0.85);
+}
+a:visited {
+	color: rgba(87, 169, 75, 0.85);
+}
+a:hover {
+	text-shadow: white 0 0 0.7em;
+}
+div.navfooter {
+	padding-top: 2em;
+	text-align: center;
+	font-size: 0.6em;
+}
+div.sub {
+	margin-left: 1.25em;
+}
+code, .code, dl.codeterms dt {
+	font-family: "Courier New", Courier, monospace;
+}
