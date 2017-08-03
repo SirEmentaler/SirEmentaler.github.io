@@ -5,6 +5,8 @@ body {
 	color: rgba(229, 255, 231, 0.85);
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	font-size: 0.9em;
+	margin: 0;
+	padding: 0;
 }
 nav, header, article, footer {
 	background-color: rgba(28, 42, 20, 0.95);
@@ -14,16 +16,18 @@ nav, header, article, footer {
 	margin: 0.5em;
 	padding: 1.5em;
 }
+nav {
+	padding-top: 0.5em;
+}
 @media (min-width: 20cm) {
 	nav {
-		padding-top: 0.5em;
 		width: 15em;
 		position: fixed;
 			top: 0;
 			left: 0;
 	}
 	header, article, footer {
-		margin-left: 18.5em;
+		margin-left: 19em;
 	}
 }
 header {
