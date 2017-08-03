@@ -2,12 +2,11 @@ body {
 	background-color: #1C2A14;
 	background-image: url("../img/background.png");
 	background-attachment: fixed;
-	color: rgba(255, 255, 255, 0.85);
+	color: rgba(229, 255, 231, 0.85);
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	font-size: 80%;
+	font-size: 0.85em;
 }
 nav, header, article, footer {
-	background-color: #1C2A14;
 	background-color: rgba(28, 42, 20, 0.95);
 	border-color: #3C7234;
 	border-style: solid;
