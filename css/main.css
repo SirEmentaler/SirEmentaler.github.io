@@ -19,7 +19,7 @@ nav, header, article, footer {
 nav {
 	padding-top: 0.5em;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
 	nav {
 		position: fixed;
 		width: 15em;
