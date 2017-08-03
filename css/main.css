@@ -14,15 +14,17 @@ nav, header, article, footer {
 	margin: 0.5em;
 	padding: 1.5em;
 }
-nav {
-	padding-top: 0.5em;
-	width: 15em;
-	position: fixed;
-		top: 0;
-		left: 0;
-}
-header, article, footer {
-	margin-left: 18.5em;
+@media (min-width: 20cm) {
+	nav {
+		padding-top: 0.5em;
+		width: 15em;
+		position: fixed;
+			top: 0;
+			left: 0;
+	}
+	header, article, footer {
+		margin-left: 18.5em;
+	}
 }
 header {
 	text-align: center;
@@ -68,7 +70,7 @@ div.navfooter {
 	font-size: 0.6em;
 }
 div.sub {
-	margin-left: 1.25em;
+	margin-left: 2.5em;
 }
 code, .code, dl.codeterms dt {
 	font-family: "Courier New", Courier, monospace;
