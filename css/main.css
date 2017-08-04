@@ -1,5 +1,5 @@
 body {
-	background-color: #1C2A14;
+	background-color: rgb(28, 42, 20);
 	background-image: url("../img/background.png");
 	background-attachment: fixed;
 	color: rgba(229, 255, 231, 0.85);
@@ -9,44 +9,56 @@ body {
 }
 nav, header, article, footer {
 	background-color: rgba(28, 42, 20, 0.95);
-	border-color: #3C7234;
+	border-color: rgb(60, 114, 52);
 	border-style: solid;
 	border-width: thin;
 	margin: 0.5em;
-	padding: 1.5em;
-}
-nav {
-	padding-top: 0.5em;
-}
-@media (min-width: 1280px) {
-	nav {
-		position: fixed;
-		width: 15em;
-		left: 0;
-		top: 0;
-	}
-	header, article, footer {
-		margin-left: 19em;
-	}
 }
 header {
+	padding: 1.5em;
 	text-align: center;
 }
 header img {
 	max-width: 100%;
 }
+nav {
+	padding: 0em;
+}
+nav ul {
+	display: table;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+nav li {
+	display: table-cell;
+	height: 100%;
+	text-align: center;
+	width: 25%;
+}
+nav a {
+	display: block;
+	font-size: 1.5em;
+	padding: 0.5em;
+	text-decoration: none;
+}
+nav a:hover, nav a:active {
+	background-color: rgba(60, 114, 52, 0.2);
+}
 article {
-	padding-left: 5em;
-	padding-right: 5em;
+	padding: 5em;
+	padding-top: 1.5em;
 }
 footer {
 	padding: 0.5em;
 }
-nav ul {
-	padding-left: 1em;
-}
 table {
 	border: void;
+	width: 100%;
+}
+td {
+	width: 25%;
 }
 h1 {
 	font-size: 1.5em;
@@ -69,11 +81,6 @@ a:visited {
 }
 a:hover {
 	text-shadow: white 0 0 0.7em;
-}
-div.navfooter {
-	padding-top: 2em;
-	text-align: center;
-	font-size: 0.6em;
 }
 div.sub {
 	margin-left: 2.5em;
