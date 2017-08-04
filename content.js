@@ -21,7 +21,7 @@ $(document).ready(function() {
 	if (!window.location.hash)
 		window.location.hash = "#home";
 	loadContent(window.location.hash);
-	$("a.load").click(function(event) {
+	$("a:not(.external)").click(function(event) {
 		loadContent(this.getAttribute("href"));
 	});
 });
