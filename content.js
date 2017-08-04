@@ -1,9 +1,15 @@
-$(document).ready(function() {
-	$('a[href="#reference"]').click(function(event) {
+var currentContent;
+function loadContent(page) {
+	if (page !== currentContent) {
 		$("#content").hide("fade", "fast", function() {
-			$("#content").load("html/reference.html", function() {
+			$("#content").load("html/" + page + ".html", function() {
 				$("#content").show("fade", "fast");
 			});
 		});
+	}
+}
+$(document).ready(function() {
+	$("a.load").click(function(event) {
+		loadContent(this.attr("href").substr(1));
 	});
 });
