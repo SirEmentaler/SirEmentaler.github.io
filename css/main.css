@@ -86,6 +86,12 @@ code {
 	font-family: "Courier New", Courier, monospace;
 }
 ul.multicolumn {
+	-moz-column-count: 3;
+	-moz-column-gap: 2em;
+	-webkit-column-count: 3;
+	-webkit-column-gap: 2em;
+	-webkit-column-break-inside: avoid;
 	column-count: 3;
 	column-gap: 2em;
+	break-inside: avoid;
 }
