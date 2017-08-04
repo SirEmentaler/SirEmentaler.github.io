@@ -85,3 +85,7 @@ a:hover {
 code {
 	font-family: "Courier New", Courier, monospace;
 }
+ul.multicolumn {
+	column-count: 3;
+	column-gap: 2em;
+}
