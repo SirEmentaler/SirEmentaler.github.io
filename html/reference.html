@@ -1,150 +1,83 @@
 <h1>Reference</h1>
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare, ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam viverra nisi, in interdum massa nibh nec erat.
-</p>
-<div class="sub">
-	<h2 id="keywords">Keywords</h2>
-	<p>
-		The following character sequences are reserved keywords in AngelScript:
-	</p>
-	<table class="code">
-		<tr>
-			<td>
-				<a href="#key_and">and</a><br />
-				<a href="#key_auto">auto</a><br />
-				<a href="#key_bool">bool</a><br />
-				<a href="#key_break">break</a><br />
-				<a href="#key_case">case</a><br />
-				<a href="#key_cast">cast</a><br />
-				<a href="#key_class">class</a><br />
-				<a href="#key_const">const</a><br />
-				<a href="#key_continue">continue</a><br />
-				<a href="#key_default">default</a><br />
-				<a href="#key_do">do</a><br />
-				<a href="#key_double">double</a><br />
-			</td>
-			<td>
-				<a href="#key_else">else</a><br />
-				<a href="#key_enum">enum</a><br />
-				<a href="#key_false">false</a><br />
-				<a href="#key_float">float</a><br />
-				<a href="#key_for">for</a><br />
-				<a href="#key_funcdef">funcdef</a><br />
-				<a href="#key_if">if</a><br />
-				<a href="#key_import">import</a><br />
-				<a href="#key_in">in</a><br />
-				<a href="#key_inout">inout</a><br />
-				<a href="#key_int">int</a><br />
-				<a href="#key_interface">interface</a><br />
-			</td>
-			<td>
-				<a href="#key_int8">int8</a><br />
-				<a href="#key_int16">int16</a><br />
-				<a href="#key_int32">int32</a><br />
-				<a href="#key_int64">int64</a><br />
-				<a href="#key_is">is</a><br />
-				<a href="#key_mixin">mixin</a><br />
-				<a href="#key_namespace">namespace</a><br />
-				<a href="#key_not">not</a><br />
-				<a href="#key_null">null</a><br />
-				<a href="#key_or">or</a><br />
-				<a href="#key_out">out</a><br />
-				<a href="#key_private">private</a><br />
-			</td>
-			<td>
-				<a href="#key_return">return</a><br />
-				<a href="#key_switch">switch</a><br />
-				<a href="#key_true">true</a><br />
-				<a href="#key_typedef">typedef</a><br />
-				<a href="#key_uint">uint</a><br />
-				<a href="#key_uint8">uint8</a><br />
-				<a href="#key_uint16">uint16</a><br />
-				<a href="#key_uint32">uint32</a><br />
-				<a href="#key_uint64">uint64</a><br />
-				<a href="#key_void">void</a><br />
-				<a href="#key_while">while</a><br />
-				<a href="#key_xor">xor</a><br />
-			</td>
-		</tr>
-	</table>
-	<p>
-		Additionally, there exist identifiers that are not keywords but gain special functionality in certain contexts:
-	</p>
-	<table class="code">
-		<tr>
-			<td>
-				<a href="#key_final">final</a><br />
-				<a href="#key_from">from</a><br />
-			</td>
-			<td>
-				<a href="#key_get">get</a><br />
-				<a href="#key_override">override</a><br />
-			</td>
-			<td>
-				<a href="#key_set">set</a><br />
-				<a href="#key_shared">shared</a><br />
-			</td>
-			<td>
-				<a href="#key_super">super</a><br />
-				<a href="#key_this">this</a><br />
-			</td>
-		</tr>
-	</table>
-	<div class="sub">
-		<dl class="codeterms">
-			<dt id="key_and">and</dt>
-			<dd>Alternative representation of the <code>&amp;&amp;</code> (logical and) operator.</dd>
-			<dt id="key_auto">auto</dt>
-			<dd>Auto specifier; specifies that the type of the variable that is being defined will be automatically deduced from its initializer.</dd>
-			<dt id="key_bool">bool</dt>
-			<dd>Boolean type.</dd>
-			<dt id="key_break">break</dt>
-			<dd>Break statement; causes the enclosing <code>for</code>, <code>while</code> or <code>do-while</code> loop or <code>switch</code> statement to terminate.</dd>
-			<dt id="key_do">do</dt>
-			<dd><code>do-while</code> loop declaration.</dd>
-			<dt id="key_double">double</dt>
-			<dd>Double-precision floating-point format number type.</dd>
-			<dt id="key_false">false</dt>
-			<dd>False boolean literal.</dd>
-			<dt id="key_float">float</dt>
-			<dd>Single-precision floating-point format number type.</dd>
-			<dt id="key_for">for</dt>
-			<dd><code>for</code> loop declaration.</dd>
-			<dt id="key_int">int</dt>
-			<dd>32-bit signed integer type.</dd>
-			<dt id="key_int8">int8</dt>
-			<dt id="key_int16">int16</dt>
-			<dt id="key_int32">int32</dt>
-			<dt id="key_int64">int64</dt>
-			<dd>n-bit signed integer type.</dd>
-			<dt id="key_is">is</dt>
-			<dd>Identity operator.</dd>
-			<dt id="key_not">not</dt>
-			<dd>Alternative representation of the <code>!</code> (negation) operator.</dd>
-			<dt id="key_null">null</dt>
-			<dd>Null handle literal.</dd>
-			<dt id="key_or">or</dt>
-			<dd>Alternative representation of the <code>||</code> (logical inclusive or) operator.</dd>
-			<dt id="key_true">true</dt>
-			<dd>True boolean literal.</dd>
-			<dt id="key_uint">uint</dt>
-			<dd>32-bit unsigned integer type.</dd>
-			<dt id="key_uint8">uint8</dt>
-			<dt id="key_uint16">uint16</dt>
-			<dt id="key_uint32">uint32</dt>
-			<dt id="key_uint64">uint64</dt>
-			<dd>n-bit unsigned integer type.</dd>
-			<dt id="key_void">void</dt>
-			<dd>Void specifier, used in function definition in place of a returned value type if the function doesn't return any value.</dd>
-			<dt id="key_while">while</dt>
-			<dd><code>while</code> loop declaration.</dd>
-			<dd><code>do-while</code> loop terminating condition declaration.</dd>
-			<dt id="key_xor">xor</dt>
-			<dd>Alternative representation of the <code>^^</code> (logical exclusive or) operator.</dd>
-		</dl>
-	</div>
-	<h2 id="operators">Operators</h2>
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare, ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam viverra nisi, in interdum massa nibh nec erat.
-	</p>
-</div>
+<h2>Language</h2>
+<ul>
+	<li>Basic concepts
+		<ul>
+			<li><a href="#lang_module">Module</a></li>
+			<li><a href="#lang_comment">Comments</a></li>
+			<li><a href="#lang_identifier">Names and identifiers</a></li>
+			<li><a href="#lang_type">Types</a></li>
+			<li><a href="#lang_instance">Instances</a></li>
+			<li><a href="#lang_handle">Handles</a></li>
+			<li><a href="#lang_scope">Scope and lifetime</a></li>
+			<li><a href="#lang_definition">Definitions</a></li>
+			<li><a href="#lang_hook">Hooks</a></li>
+		</ul>
+	</li>
+	<li><a href="#lang_keyword">Keywords</a></li>
+	<li><a href="#lang_preprocessor">Preprocessor</a></li>
+	<li><a href="#lang_expression">Expressions</a>
+		<ul>
+			<li><a href="#lang_operator">Operators</a></li>
+			<li><a href="#lang_conversion">Conversions</a></li>
+			<li><a href="#lang_literal">Literals</a></li>
+		</ul>
+	</li>
+	<li>Declaration
+		<ul>
+			<li><a href="#lang_namespace">Namespaces</a></li>
+			<li><a href="#lang_enum">Enumeration types</a></li>
+			<li><a href="#lang_type_alias">Type aliases</a></li>
+			<li><a href="#lang_auto">Auto declarations</a></li>
+			<li><a href="#lang_shared">Shared script entities</a></li>
+			<li><a href="#lang_import">Imports</a></li>
+		</ul>
+	</li>
+	<li><a href="#lang_function">Functions</a>
+		<ul>
+			<li><a href="#lang_function_overload">Function overloading</a></li>
+			<li><a href="#lang_reference">References</a></li>
+			<li><a href="#lang_default_arguments">Default arguments</a></li>
+			<li><a href="#lang_property_accessor">Property accessors</a></li>
+			<li><a href="#lang_function_handle">Function handles</a></li>
+			<li><a href="#lang_lambda">Lambda functions</a></li>
+		</ul>
+	</li>
+	<li><a href="#lang_statement">Statements</a>
+		<ul>
+			<li><a href="#lang_block">Statement block</a></li>
+			<li><a href="#lang_if"><code>if</code></a></li>
+			<li><a href="#lang_switch"><code>switch</code></a></li>
+			<li><a href="#lang_for"><code>for</code></a></li>
+			<li><a href="#lang_while"><code>while</code></a></li>
+			<li><a href="#lang_do"><code>do-while</code></a></li>
+			<li><a href="#lang_continue"><code>continue</code></a></li>
+			<li><a href="#lang_break"><code>break</code></a></li>
+			<li><a href="#lang_return"><code>return</code></a></li>
+		</ul>
+	</li>
+	<li><a href="#lang_class">Classes</a>
+		<ul>
+			<li><a href="#lang_member">Class members</a></li>
+			<li><a href="#lang_method">Class methods</a></li>
+			<li><a href="#lang_delegate">Delegates</a></li>
+			<li><a href="#lang_operator_overload">Operator overloading</a></li>
+			<li><a href="#lang_inheritance">Inheritance</a></li>
+			<li><a href="#lang_constructor">Constructors</a></li>
+			<li><a href="#lang_destructor">Destructors</a></li>
+			<li><a href="#lang_access">Member access</a></li>
+			<li><a href="#lang_polymorphism">Polymorphism</a></li>
+			<li><a href="#lang_abstract">Abstract classes</a></li>
+			<li><a href="#lang_interface">Interfaces</a></li>
+			<li><a href="#lang_mixin">Mixin classes</a></li>
+			<li><a href="#lang_class_template">Class templates</a></li>
+		</ul>
+	</li>
+</ul>
+<h2>Official libraries</h2>
+<ul>
+	<li><a href="#lib_array">array</a></li>
+	<li><a href="#lib_dictionary">dictionary</a></li>
+	<li><a href="#lib_math">math</a></li>
+	<li><a href="#lib_string">string</a></li>
+</ul>
