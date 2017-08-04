@@ -1,10 +1,10 @@
 var currentContent;
 function loadContent(page) {
 	if (page.length > 0 && page !== currentContent) {
-		$("#content").hide("fade", "fast", function() {
+		$("#content").slideUp("fast", function() {
 			$("#content").load("html/" + page.substr(1) + ".html", function() {
 				currentContent = page;
-				$("#content").show("fade", "fast");
+				$("#content").slideDown("fast");
 			});
 		});
 	}
