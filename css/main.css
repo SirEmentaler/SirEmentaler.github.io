@@ -82,9 +82,6 @@ a:visited {
 a:hover {
 	text-shadow: white 0 0 0.7em;
 }
-div.sub {
-	margin-left: 2.5em;
-}
-code, .code, dl.codeterms dt {
+code {
 	font-family: "Courier New", Courier, monospace;
 }
