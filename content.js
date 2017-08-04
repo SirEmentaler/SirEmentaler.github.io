@@ -1,14 +1,22 @@
 var currentContent;
 function loadContent(page) {
 	if (page.length > 0 && page !== currentContent) {
-		$("#content").slideUp("fast", function() {
-			$("#content").load("html/" + page.substr(1) + ".html", function() {
-				currentContent = page;
-				$("#content").slideDown("fast");
+		function load() {
+			$("#content").load("html/" + page.substr(1) + ".html", function(responseText, textStatus, jqXHR) {
+				if (textStatus !== "error") {
+					currentContent = page;
+					$("#content").slideDown("fast");
+				} else if (page !== "#404") {
+					loadContent("#404");
+				}
 			});
-		});
+		};
+		if ($("#content").is(":visible"))
+			$("#content").slideUp("fast", load);
+		else
+			$("#content").load();
 	}
-}
+};
 $(document).ready(function() {
 	if (!window.location.hash)
 		window.location.hash = "#home";
