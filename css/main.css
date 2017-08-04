@@ -85,15 +85,17 @@ a:hover {
 code {
 	font-family: "Courier New", Courier, monospace;
 }
-ul.multicolumn {
-	-moz-column-count: 3;
-	-moz-column-gap: 2em;
-	-webkit-column-count: 3;
-	-webkit-column-gap: 2em;
-	column-count: 3;
-	column-gap: 2em;
-}
-ul.multicolumn li {
-	-webkit-column-break-inside: avoid;
-	break-inside: avoid;
+@media (min-width: 1280px) {
+	ul.multicolumn {
+		-moz-column-count: 3;
+		-moz-column-gap: 2em;
+		-webkit-column-count: 3;
+		-webkit-column-gap: 2em;
+		column-count: 3;
+		column-gap: 2em;
+	}
+	ul.multicolumn li {
+		-webkit-column-break-inside: avoid;
+		break-inside: avoid;
+	}
 }
