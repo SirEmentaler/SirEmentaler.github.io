@@ -1,7 +1,7 @@
 var currentContent;
 function loadContent(page) {
 	if (page.length > 0 && page !== currentContent) {
-		function load() {
+		function onLoad() {
 			$("#content").load("html/" + page.substr(1) + ".html", function(responseText, textStatus, jqXHR) {
 				if (textStatus !== "error") {
 					currentContent = page;
@@ -12,9 +12,9 @@ function loadContent(page) {
 			});
 		};
 		if ($("#content").is(":visible"))
-			$("#content").slideUp("fast", load);
+			$("#content").slideUp("fast", onLoad);
 		else
-			$("#content").load();
+			onLoad();
 	}
 };
 $(document).ready(function() {
