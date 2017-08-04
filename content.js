@@ -10,6 +10,6 @@ function loadContent(page) {
 }
 $(document).ready(function() {
 	$("a.load").click(function(event) {
-		loadContent(this.href.substr(1));
+		loadContent(this.getAttribute("href").substr(1));
 	});
 });
