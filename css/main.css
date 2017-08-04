@@ -71,7 +71,7 @@ h3 {
 }
 p {
 	text-align: justify;
-	text-indent: 1em;
+	text-indent: 0;
 }
 a:link {
 	color: rgba(172, 215, 166, 0.85);
