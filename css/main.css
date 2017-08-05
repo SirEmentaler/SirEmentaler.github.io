@@ -104,6 +104,17 @@ code {
 	color: rgba(229, 255, 231, 0.4);
 	font-style: oblique;
 }
+ol {
+  counter-reset: olcounter;
+  list-style-type: none;
+  margin-left: 0;
+}
+ol > li {
+  counter-increment: olcounter;
+}
+ol > li:before {
+  content: counter(olcounter) ") ";
+}
 @media (min-width: 1280px) {
 	ul.multicolumn {
 		-moz-column-count: 3;
