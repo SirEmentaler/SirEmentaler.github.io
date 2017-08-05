@@ -88,6 +88,10 @@ a:hover {
 code {
 	font-family: "Courier New", Courier, monospace;
 }
+.term {
+	color: rgba(229, 255, 231, 0.6);
+	font-style: oblique;
+}
 @media (min-width: 1280px) {
 	ul.multicolumn {
 		-moz-column-count: 3;
