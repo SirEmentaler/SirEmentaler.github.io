@@ -105,16 +105,16 @@ code {
 	font-style: oblique;
 }
 ol {
-  counter-reset: olcounter;
-  list-style-type: none;
-  margin-left: 0;
-  padding-left: 1em;
+	counter-reset: olcounter;
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 1em;
 }
 ol > li {
-  counter-increment: olcounter;
+	counter-increment: olcounter;
 }
 ol > li:before {
-  content: counter(olcounter) ") ";
+	content: counter(olcounter) ") ";
 }
 @media (min-width: 1280px) {
 	ul.multicolumn {
