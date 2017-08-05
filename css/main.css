@@ -101,8 +101,8 @@ a.external {
 	background-image: url("../img/external.svg");
 	background-position: center right;
 	background-repeat: no-repeat;
-	background-size: 1em;
-	padding-right: 1em;
+	background-size: 0.5em;
+	padding-right: 0.5em;
 }
 code {
 	font-family: "Courier New", Courier, "Liberation Mono", monospace;
