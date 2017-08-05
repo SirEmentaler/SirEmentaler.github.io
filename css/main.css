@@ -53,18 +53,32 @@ article {
 footer {
 	padding: 0.5em;
 }
-table {
+table.syntax {
 	border: void;
+	border-collapse: collapse;
+	padding: 0;
 	width: 100%;
 }
-td {
-	width: 25%;
+table.syntax tr {
+	border-bottom-color: rgba(60, 114, 52, 0.5);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-top-color: rgba(60, 114, 52, 0.5);
+	border-top-style: solid;
+	border-top-width: 1px;
+	padding: 0;
+}
+table.syntax tr td {
+	padding: 0;
+}
+table.syntax tr td:not(:first-child) {
+	padding-left: 5em;
 }
 h1 {
 	font-size: 1.5em;
 	border-bottom-color: rgba(60, 114, 52, 0.5);
 	border-bottom-style: solid;
-	border-bottom-width: thin;
+	border-bottom-width: 1px;
 }
 h2 {
 	font-size: 1.25em;
@@ -89,7 +103,7 @@ code {
 	font-family: "Courier New", Courier, monospace;
 }
 .term {
-	color: rgba(229, 255, 231, 0.6);
+	color: rgba(229, 255, 231, 0.4);
 	font-style: oblique;
 }
 @media (min-width: 1280px) {
