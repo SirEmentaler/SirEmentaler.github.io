@@ -97,6 +97,12 @@ a:visited {
 a:hover {
 	text-shadow: white 0 0 0.7em;
 }
+a.external {
+	background-image: url("../img/external.svg");
+	background-position: center right;
+	background-repeat: no-repeat;
+	padding-right: 1em;
+}
 code {
 	font-family: "Courier New", Courier, "Liberation Mono", monospace;
 }
