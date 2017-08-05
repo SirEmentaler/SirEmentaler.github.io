@@ -108,6 +108,7 @@ ol {
   counter-reset: olcounter;
   list-style-type: none;
   margin-left: 0;
+  padding-left: 1em;
 }
 ol > li {
   counter-increment: olcounter;
