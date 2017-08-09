@@ -10,8 +10,10 @@ body {
 nav, header, article, footer {
 	background-color: rgba(28, 42, 20, 0.95);
 	border-color: rgb(60, 114, 52);
+	border-radius: 0.25em;
 	border-style: solid;
 	border-width: thin;
+	box-shadow: 0 0.4em 1em 0 rgba(0, 0, 0, 0.5);
 	margin: 0.5em;
 }
 header {
