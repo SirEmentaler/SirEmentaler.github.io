@@ -108,12 +108,44 @@ a.external {
 	background-size: 0.7em;
 	padding-right: 1em;
 }
-code {
+code, pre {
 	font-family: "Courier New", Courier, "Liberation Mono", monospace;
 }
 .term {
 	color: rgba(229, 255, 231, 0.4);
 	font-style: oblique;
+}
+pre {
+	background-color: rgb(33, 44, 55);
+	border-color: rgb(60, 114, 52);
+	border-radius: 0.25em;
+	border-style: solid;
+	border-width: thin;
+	color: rgba(255, 255, 255, 0.8);
+	margin: 0.5em;
+	padding: 0.5em;
+	width: 100%;
+}
+.function, .variable, .type {
+	color: rgba(112, 224, 26, 0.8);
+}
+.keyword {
+	color: rgba(255, 0, 67, 0.7);
+}
+.keyword.type, .preprocessor {
+	color: rgba(255, 255, 255, 0.8);
+}
+.definition {
+	color: rgba(255, 127, 0, 0.8);
+}
+.literal {
+	color: rgba(104, 56, 175, 0.8);
+}
+.string {
+	color: rgba(255, 212, 127, 0.8);
+}
+.comment {
+	color: rgba(255, 255, 255, 0.4);
 }
 ol {
 	counter-reset: olcounter;

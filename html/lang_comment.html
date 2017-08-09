@@ -9,3 +9,19 @@
 	<li>Multi-line comment</li>
 	<li>Single-line comment</li>
 </ol>
+<h2>Example</h2>
+<pre>
+<span class="multiline comment">/* Multi-line comments
+may span
+multiple lines */</span>
+
+<span class="multiline comment">/* or just one */</span>
+
+<span class="singleline comment">// Single-line comments can only</span>
+<span class="singleline comment">// contain one line each</span>
+
+<span class="keyword type">void</span> <span class="api hook function definition">onLevelLoad</span>() {
+	<span class="singleline comment">// jjDebug("Code inside comments doesn't run");</span>
+	<span class="api function call">jjDebug</span>(<span class="string literal">"Other code runs as usual"</span>);
+}
+</pre>
