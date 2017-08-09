@@ -121,31 +121,31 @@ pre {
 	border-radius: 0.25em;
 	border-style: solid;
 	border-width: thin;
-	color: rgba(255, 255, 255, 0.95);
+	color: rgb(248, 248, 242);
 	margin: 0.5em;
 	padding: 0.5em;
 	width: 100%;
 }
 .function, .variable, .type {
-	color: rgba(112, 224, 26, 0.95);
+	color: rgb(166, 226, 46);
 }
 .keyword {
-	color: rgba(255, 0, 67, 0.8);
+	color: rgb(249, 38, 114);
 }
 .keyword.type, .preprocessor {
-	color: rgba(255, 255, 255, 0.95);
+	color: rgb(248, 248, 242);
 }
 .definition {
-	color: rgba(255, 127, 0, 0.95);
+	color: rgb(253, 151, 31);
 }
 .literal {
-	color: rgba(104, 56, 175, 0.95);
+	color: rgb(174, 129, 255);
 }
 .string {
-	color: rgba(255, 212, 127, 0.95);
+	color: rgb(230, 219, 116);
 }
 .comment {
-	color: rgba(255, 255, 255, 0.4);
+	color: rgba(248, 248, 242, 0.5);
 }
 ol {
 	counter-reset: olcounter;
