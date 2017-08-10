@@ -1,0 +1,10 @@
+<h1>Names and identifiers</h1>
+<p>An identifier is a sequence of letters, digits, and underscores of arbitrary length, beginning with a non-digit. Identifiers are case-sensitive, i.e. lowercase and uppercase letters are considered distinct.</p>
+<p>Identifiers that aren't <a href="#lang_keyword">keywords</a> can be used to name variables, functions, types, enumerators, namespaces, virtual properties, and other entities, during their <a href="#lang_definition">declaration</a>. An identifier that names a variable, a function, an enumerator, can be used as an <a href="#lang_expression">expression</a>. Such an expression returns the entity named by the identifier and has no side effects. An identifier that names a virtual property can be used to form a virtual property access expression whose value and side effects depend on context, see <a href="#lang_property_accessor">property accessors</a> for details.</p>
+<p>A name refers to an entity and is one of:
+	<ul>
+		<li>an identifier;</li>
+		<li>a class name preceded by the character <code>~</code> (a <a href="#lang_destructor">destructor</a> name);</li>
+		<li>a <a href="#lang_class_template">template</a> name followed by its argument list.</li>
+	</ul>
+</p>
